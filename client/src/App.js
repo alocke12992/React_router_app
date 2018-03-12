@@ -6,7 +6,7 @@ import NoMatch from './components/NoMatch';
 import NavBar from './components/NavBar';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
-
+import Product from './components/Product'
 const App = () => (
   <div>
     <NavBar />
@@ -15,6 +15,7 @@ const App = () => (
       <Route exact path="/about" component={About} />
       <Route exact path="/login" component={Login} />
       <Route exact path="/dashboard" component={Dashboard} />
+      <Route exact path="/product/:id" component={Product} />
       <Route component={NoMatch} />
     </Switch>
   </div>
