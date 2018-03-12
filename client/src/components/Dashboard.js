@@ -51,7 +51,9 @@ class Dashboard extends React.Component {
     return (
       <div>
         <h2>Products</h2>
-        <button onClick={this.toggleForm}>
+        <button 
+          className="btn blue"
+          onClick={this.toggleForm}>
           {showForm ? 'Hide Form' : 'Show'}
         </button>
         {showForm ? this.form() : this.show()}

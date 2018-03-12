@@ -4,6 +4,10 @@ class Form extends React.Component {
   defaultValues = { name: '', price: '', description: '', department: '' }
   state = { ...this.defaultValues }
 
+  componentDidMount() {
+    if (this.props.id)
+      this.setState({...this.props})
+  }
   handleSubmit = (e) => {
     e.preventDefault();
     let product = { ...this.state }
@@ -46,7 +50,7 @@ class Form extends React.Component {
           value={department}
           onChange={this.handleChange}
         />
-        <button>Submit</button>
+        <button className="btn small blue">Submit</button>
       </form>
     )
   }
