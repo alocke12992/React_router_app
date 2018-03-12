@@ -46,7 +46,7 @@ const additionalLinks = (history) => {
 }
 
 const NavBar = ({ history }) => (
-  <nav>
+  <nav className="blue">
     <NavLink
       exact
       activeStyle={styles.active}

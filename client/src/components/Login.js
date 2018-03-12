@@ -5,7 +5,7 @@ const Login = ({ history }) => (
   <div>
     <h3>Login</h3>
     <button 
-      className="btn" 
+      className="btn blue" 
       onClick={ () => {
       login() 
       history.push('/dashboard')
