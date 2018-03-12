@@ -36,7 +36,7 @@ const additionalLinks = (history) => {
   } else {
     return (
       <NavLink
-        style={styles.active}
+        activeStyle={styles.active}
         to="/login"
       >
         Login
@@ -61,6 +61,7 @@ const NavBar = ({ history }) => (
     >
       About
     </NavLink>
+    {' '}
     {additionalLinks(history)}
   </nav>
 )
